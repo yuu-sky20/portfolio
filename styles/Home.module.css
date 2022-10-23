@@ -60,6 +60,8 @@
   margin: 2rem 0;
   line-height: 1.5;
   font-size: 1.2rem;
+  text-align: left;
+  min-width: 120px;
 }
 
 .code {
@@ -77,6 +79,19 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
+}
+
+.grid_skill {
+  display: grid;
+  max-width: 800px;
+  grid-template-columns: 120px 1fr;
+}
+
+.grid_card_skill {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -121,13 +136,13 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   .card,
   .footer {
-    border-color: #222;
+    border-color: black;
   }
   .code {
-    background: #111;
+    background: rgb(116, 255, 186);
   }
   .logo img {
     filter: invert(1);

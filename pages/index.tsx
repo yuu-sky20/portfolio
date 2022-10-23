@@ -22,13 +22,20 @@ const Home: NextPage = () => {
         </p>
 
         <div className={styles.grid}>
-          <a href="" className={styles.card}>
+          <a
+            href=""
+            className={styles.card}
+            target="_blank" rel="noopener noreferrer"
+          >
             <h2>whack-a-gopher &rarr;</h2>
             <p>Fun game to play whack-a-mole with cute characters.</p>
             {/* TODO: add skill tag: */}
           </a>
 
-          <a href="actix-space-remover" className={styles.card}>
+          <a href="https://github.com/yuu-sky20/actix-space-remover"
+            className={styles.card}
+            target="_blank" rel="noopener noreferrer"
+          >
             <h2>actix-space-remover &rarr;</h2>
             <p>Remove superfluous line breaks and white space from text.</p>
           </a>
@@ -36,6 +43,7 @@ const Home: NextPage = () => {
           <a
             href="https://github.com/yuu-sky20/slot-machine-app"
             className={styles.card}
+            target="_blank" rel="noopener noreferrer"
           >
             <h2>slot-machine-app &rarr;</h2>
             <p>Experience a slot machine game.</p>
@@ -44,6 +52,7 @@ const Home: NextPage = () => {
           <a
             href="https://github.com/yuu-sky20/simple-web-piano"
             className={styles.card}
+            target="_blank" rel="noopener noreferrer"
           >
             <h2>Simple Web Piano &rarr;</h2>
             <p>That can be played on the web.</p>
@@ -55,65 +64,71 @@ const Home: NextPage = () => {
         </p>
 
         <div>
-          <section className={styles.grid}>
-            <h3 className={styles.description_skill}>Proficient : </h3>
-            <p className={styles.card}>
-              C
-            </p>
-            <p className={styles.card}>
-              C++
-            </p>
-            <p className={styles.card}>
-              Rust
-            </p>
-            <p className={styles.card}>
-              Javascript (typescript)
-            </p>
+          <section className={styles.grid_skill}>
+            <h3 className={styles.description_skill}>Proficient :</h3>
+            <div className={styles.grid_card_skill}>
+              <p className={styles.card}>
+                C
+              </p>
+              <p className={styles.card}>
+                C++
+              </p>
+              <p className={styles.card}>
+                Rust
+              </p>
+              <p className={styles.card}>
+                Javascript (Typescript)
+              </p>
+            </div>
           </section>
-          <section className={styles.grid}>
+          <section className={styles.grid_skill}>
             <h3 className={styles.description_skill}>Be usable : </h3>
-            <p className={styles.card}>
-              C#
-            </p>
-            <p className={styles.card}>
-              Python
-            </p>
-            <p className={styles.card}>
-              Haskell
-            </p>
-            <p className={styles.card}>
-              Go
-            </p>
+            <div className={styles.grid_card_skill}>
+              <p className={styles.card}>
+                C#
+              </p>
+              <p className={styles.card}>
+                Python
+              </p>
+              <p className={styles.card}>
+                Haskell
+              </p>
+              <p className={styles.card}>
+                Go
+              </p>
+              <p className={styles.card}>
+                Docker
+              </p>
+              <p className={styles.card}>
+                Git
+              </p>
+              <p className={styles.card}>
+                React
+              </p>
+              <p className={styles.card}>
+                Vue
+              </p>
+            </div>
           </section>
-          <section className={styles.grid}>
+          <section className={styles.grid_skill}>
             <h3 className={styles.description_skill}>Touched it : </h3>
-            <p className={styles.card}>
-              Ruby
-            </p>
-            <p className={styles.card}>
-              Java
-            </p>
-            <p className={styles.card}>
-              Elm
-            </p>
-            <p className={styles.card}>
-              Common Lisp
-            </p>
-          </section>
-          <section className={styles.grid}>
-            <h4 className={styles.description_skill}>Others : </h4>
-            <p className={styles.card}>
-              Docker
-            </p>
-            <p className={styles.card}>
-              Kubernetes
-            </p>
-            <p className={styles.card}>
-              Selenium
-            </p>
-            <p className={styles.card}>
-              Git
-            </p>
+            <div className={styles.grid_card_skill}>
+              <p className={styles.card}>
+                Ruby
+              </p>
+              <p className={styles.card}>
+                Java
+              </p>
+              <p className={styles.card}>
+                Elm
+              </p>
+              <p className={styles.card}>
+                Common Lisp
+              </p>
+              <p className={styles.card}>
+                Kubernetes
+              </p>
+            </div>
           </section>
         </div>
       </main>
