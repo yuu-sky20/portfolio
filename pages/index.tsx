@@ -18,7 +18,11 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
-          My Products
+          Profile
+        </p>
+
+        <p className={styles.description}>
+          Products
         </p>
 
         <div className={styles.grid}>
@@ -67,16 +71,16 @@ const Home: NextPage = () => {
           <section className={styles.grid_skill}>
             <h3 className={styles.description_skill}>Proficient :</h3>
             <div className={styles.grid_card_skill}>
-              <p className={styles.card}>
+              <p className={styles.card_skill}>
                 C
               </p>
-              <p className={styles.card}>
+              <p className={styles.card_skill}>
                 C++
               </p>
-              <p className={styles.card}>
+              <p className={styles.card_skill}>
                 Rust
               </p>
-              <p className={styles.card}>
+              <p className={styles.card_skill}>
                 Javascript (Typescript)
               </p>
             </div>
@@ -84,28 +88,28 @@ const Home: NextPage = () => {
           <section className={styles.grid_skill}>
             <h3 className={styles.description_skill}>Be usable : </h3>
             <div className={styles.grid_card_skill}>
-              <p className={styles.card}>
+              <p className={styles.card_skill}>
                 C#
               </p>
-              <p className={styles.card}>
+              <p className={styles.card_skill}>
                 Python
               </p>
-              <p className={styles.card}>
+              <p className={styles.card_skill}>
                 Haskell
               </p>
-              <p className={styles.card}>
+              <p className={styles.card_skill}>
                 Go
               </p>
-              <p className={styles.card}>
+              <p className={styles.card_skill}>
                 Docker
               </p>
-              <p className={styles.card}>
+              <p className={styles.card_skill}>
                 Git
               </p>
-              <p className={styles.card}>
+              <p className={styles.card_skill}>
                 React
               </p>
-              <p className={styles.card}>
+              <p className={styles.card_skill}>
                 Vue
               </p>
             </div>
@@ -113,19 +117,19 @@ const Home: NextPage = () => {
           <section className={styles.grid_skill}>
             <h3 className={styles.description_skill}>Touched it : </h3>
             <div className={styles.grid_card_skill}>
-              <p className={styles.card}>
+              <p className={styles.card_skill}>
                 Ruby
               </p>
-              <p className={styles.card}>
+              <p className={styles.card_skill}>
                 Java
               </p>
-              <p className={styles.card}>
+              <p className={styles.card_skill}>
                 Elm
               </p>
-              <p className={styles.card}>
+              <p className={styles.card_skill}>
                 Common Lisp
               </p>
-              <p className={styles.card}>
+              <p className={styles.card_skill}>
                 Kubernetes
               </p>
             </div>

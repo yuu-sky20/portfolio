@@ -61,7 +61,6 @@
   line-height: 1.5;
   font-size: 1.2rem;
   text-align: left;
-  min-width: 120px;
 }
 
 .code {
@@ -104,6 +103,19 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+  min-height: 200px;
+}
+
+.card_skill {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
 }
 
 .card:hover,
@@ -113,12 +125,26 @@
   border-color: #0070f3;
 }
 
+.card_skill:hover,
+.card_skill:focus,
+.card_skill:active {
+  color:rgb(0, 131, 85);
+  border-color: rgb(0, 131, 85);
+  background-color: rgb(175, 255, 215);
+}
+
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
 }
 
 .card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.card_skill p {
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -138,6 +164,7 @@
 
 @media (prefers-color-scheme: light) {
   .card,
+  .card_skill,
   .footer {
     border-color: black;
   }
