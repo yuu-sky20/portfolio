@@ -83,7 +83,9 @@
 
 .myprofile_comment {
   margin-left: 20px;
+  text-align: center;
 }
+
 
 .url_techful {
   text-align: left;
@@ -98,6 +100,16 @@
 .url_techful:focus,
 .url_techful:active {
   color: rgb(38, 83, 189);
+}
+
+.url_github {
+  margin-left: 10px;
+}
+
+.url_github svg:hover,
+.url_github svg:focus,
+.url_github svg:active {
+  fill: black;
 }
 
 .grid {
