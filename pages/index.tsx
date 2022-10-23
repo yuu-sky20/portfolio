@@ -13,13 +13,25 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Thanks for looking!
-        </h1>
-
         <p className={styles.description}>
-          Profile
+          My Profile
         </p>
+
+        <div className={styles.myprofile}>
+          {/* TODO write profile */}
+          <Image src="/crypko.jpg" alt="profile icon" width={150} height={150} />
+          <div className={styles.myprofile_comment}>
+            <p>Yuusuke Koitabashi</p>
+            <a
+              href="https://techful-programming.com/account/user/portfolio/30168"
+              className={styles.url_techful}
+              target="_blank" rel="noopener noreferrer"
+            >
+              <p>TechFUL Portfolio</p>
+            </a>
+            <p>Github : </p>
+          </div>
+        </div>
 
         <p className={styles.description}>
           Products
@@ -33,7 +45,6 @@ const Home: NextPage = () => {
           >
             <h2>whack-a-gopher &rarr;</h2>
             <p>Fun game to play whack-a-mole with cute characters.</p>
-            {/* TODO: add skill tag: */}
           </a>
 
           <a href="https://github.com/yuu-sky20/actix-space-remover"
@@ -69,7 +80,7 @@ const Home: NextPage = () => {
 
         <div>
           <section className={styles.grid_skill}>
-            <h3 className={styles.description_skill}>Proficient :</h3>
+            <h3 className={styles.description_skill}>Proficient</h3>
             <div className={styles.grid_card_skill}>
               <p className={styles.card_skill}>
                 C
@@ -86,7 +97,7 @@ const Home: NextPage = () => {
             </div>
           </section>
           <section className={styles.grid_skill}>
-            <h3 className={styles.description_skill}>Be usable : </h3>
+            <h3 className={styles.description_skill}>Be usable</h3>
             <div className={styles.grid_card_skill}>
               <p className={styles.card_skill}>
                 C#
@@ -115,7 +126,7 @@ const Home: NextPage = () => {
             </div>
           </section>
           <section className={styles.grid_skill}>
-            <h3 className={styles.description_skill}>Touched it : </h3>
+            <h3 className={styles.description_skill}>Touched it</h3>
             <div className={styles.grid_card_skill}>
               <p className={styles.card_skill}>
                 Ruby
@@ -135,6 +146,8 @@ const Home: NextPage = () => {
             </div>
           </section>
         </div>
+
+
       </main>
 
       <footer className={styles.footer}>
