@@ -4,7 +4,11 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { FaGithub } from "react-icons/fa"
 
+import Products from './contents/products'
+import Skills from './contents/skills'
+
 const Home: NextPage = () => {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -48,117 +52,13 @@ const Home: NextPage = () => {
           Products
         </p>
 
-        <div className={styles.grid}>
-          <a
-            href=""
-            className={styles.card}
-            target="_blank" rel="noopener noreferrer"
-          >
-            <h2>whack-a-gopher &rarr;</h2>
-            <p>Fun game to play whack-a-mole with cute characters.</p>
-          </a>
-
-          <a href="https://github.com/yuu-sky20/actix-space-remover"
-            className={styles.card}
-            target="_blank" rel="noopener noreferrer"
-          >
-            <h2>actix-space-remover &rarr;</h2>
-            <p>Remove superfluous line breaks and white space from text.</p>
-          </a>
-
-          <a
-            href="https://github.com/yuu-sky20/slot-machine-app"
-            className={styles.card}
-            target="_blank" rel="noopener noreferrer"
-          >
-            <h2>slot-machine-app &rarr;</h2>
-            <p>Experience a slot machine game.</p>
-          </a>
-
-          <a
-            href="https://github.com/yuu-sky20/simple-web-piano"
-            className={styles.card}
-            target="_blank" rel="noopener noreferrer"
-          >
-            <h2>Simple Web Piano &rarr;</h2>
-            <p>That can be played on the web.</p>
-          </a>
-        </div>
+        <Products />
 
         <p className={styles.description}>
           Skills
         </p>
-
-        <div>
-          <section className={styles.grid_skill}>
-            <h3 className={styles.description_skill}>Proficient</h3>
-            <div className={styles.grid_card_skill}>
-              <p className={styles.card_skill}>
-                C
-              </p>
-              <p className={styles.card_skill}>
-                C++
-              </p>
-              <p className={styles.card_skill}>
-                Rust
-              </p>
-              <p className={styles.card_skill}>
-                Javascript (Typescript)
-              </p>
-            </div>
-          </section>
-          <section className={styles.grid_skill}>
-            <h3 className={styles.description_skill}>Be usable</h3>
-            <div className={styles.grid_card_skill}>
-              <p className={styles.card_skill}>
-                C#
-              </p>
-              <p className={styles.card_skill}>
-                Python
-              </p>
-              <p className={styles.card_skill}>
-                Haskell
-              </p>
-              <p className={styles.card_skill}>
-                Go
-              </p>
-              <p className={styles.card_skill}>
-                Docker
-              </p>
-              <p className={styles.card_skill}>
-                Git
-              </p>
-              <p className={styles.card_skill}>
-                React
-              </p>
-              <p className={styles.card_skill}>
-                Vue
-              </p>
-            </div>
-          </section>
-          <section className={styles.grid_skill}>
-            <h3 className={styles.description_skill}>Touched it</h3>
-            <div className={styles.grid_card_skill}>
-              <p className={styles.card_skill}>
-                Ruby
-              </p>
-              <p className={styles.card_skill}>
-                Java
-              </p>
-              <p className={styles.card_skill}>
-                Elm
-              </p>
-              <p className={styles.card_skill}>
-                Common Lisp
-              </p>
-              <p className={styles.card_skill}>
-                Kubernetes
-              </p>
-            </div>
-          </section>
-        </div>
-
-
+        
+        <Skills />
       </main>
 
       <footer className={styles.footer}>
