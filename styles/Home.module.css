@@ -81,8 +81,11 @@
   max-width: 800px;
 }
 
+.myprofile_icon {
+  margin-right: 20px;
+}
+
 .myprofile_comment {
-  margin-left: 20px;
   text-align: center;
 }
 
