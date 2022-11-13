@@ -15,7 +15,7 @@ const allProducts: Array<[url, title, comment]> = [
     [
         "https://quiet-praline-e7ca33.netlify.app",
         "gabugabu",
-        "Abyssos: The Fifth Circle (Savage)'s gabugabu in action."
+        "Abyssos: The Fifth Circle (Savage) gabugabu action."
     ],
     [
         "https://github.com/yuu-sky20/actix-space-remover",
