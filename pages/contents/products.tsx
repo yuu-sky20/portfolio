@@ -8,14 +8,14 @@ type comment = string
 
 const allProducts: Array<[url, title, comment]> = [
     [
-        "",
+        "https://github.com/yuu-sky20/whack-a-gopher",
         "whack-a-gopher",
         "Fun game to play whack-a-mole with cute characters."
     ],
     [
         "https://quiet-praline-e7ca33.netlify.app",
         "gabugabu",
-        "煉獄零式1層のがぶがぶギミックの動きを確認できるサイト"
+        "Abyssos: The Fifth Circle (Savage)'s gabugabu in action."
     ],
     [
         "https://github.com/yuu-sky20/actix-space-remover",
