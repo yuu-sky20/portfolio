@@ -72,48 +72,6 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.myprofile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  max-width: 800px;
-}
-
-.myprofile_icon {
-  margin-right: 20px;
-}
-
-.myprofile_comment {
-  text-align: center;
-}
-
-
-.url_techful {
-  text-align: left;
-  text-decoration: none;
-  font-size: 1.25em;
-  max-width: 300px;
-  border-radius: 5px;
-  color: #0070f3;
-}
-
-.url_techful:hover,
-.url_techful:focus,
-.url_techful:active {
-  color: rgb(38, 83, 189);
-}
-
-.url_github {
-  margin-left: 10px;
-}
-
-.url_github svg:hover,
-.url_github svg:focus,
-.url_github svg:active {
-  fill: black;
-}
 
 .grid {
   display: flex;

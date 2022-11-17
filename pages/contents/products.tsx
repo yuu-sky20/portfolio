@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
-import { Card, CardContent, CardActions, Link, Typography, Grid } from '@mui/material'
+import { Card, CardContent, CardActions, Typography, Grid, Link } from '@mui/material'
 import { FaGithub, FaLaptop } from 'react-icons/fa'
+import { css } from '@emotion/css'
 
 type productUrl = string
 type githubUrl = string
 type title = string
 type comment = string
-
 
 const allProducts: Array<[productUrl, githubUrl, title, comment]> = [
     [
@@ -41,6 +41,12 @@ const allProducts: Array<[productUrl, githubUrl, title, comment]> = [
     ]
 ]
 
+const styleLink = css`
+    &:hover svg, &:focus svg, &:active svg {
+        fill: black;
+    }
+`
+
 const Products: NextPage = () => {
     const productsComponent = allProducts.map(([productUrl, githubUrl, title, comment]) => (
         <Grid item xs={2} sm={4} md={4} key={"product-" + title}>
@@ -54,11 +60,11 @@ const Products: NextPage = () => {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Link href={githubUrl}>
-                        <FaGithub></FaGithub>
+                    <Link href={githubUrl} target="_blank" className={styleLink}>
+                        {githubUrl != "" && <FaGithub color={"ccc"} size={"1.5rem"}></FaGithub>}
                     </Link>
-                    <Link href={productUrl}>
-                        {productUrl != "" && <FaLaptop></FaLaptop>}
+                    <Link href={productUrl} target="_blank" className={styleLink}>
+                        {productUrl != "" && <FaLaptop color={"ccc"} size={"1.5rem"}></FaLaptop>}
                     </Link>
                 </CardActions>
             </Card>
