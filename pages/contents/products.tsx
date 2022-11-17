@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
-import styles from '../../styles/Home.module.css'
+import { Card, CardContent, CardActions, Link, Typography, Grid } from '@mui/material'
+import { FaGithub } from 'react-icons/fa'
 
 type url = string
 type title = string
@@ -36,20 +37,31 @@ const allProducts: Array<[url, title, comment]> = [
 
 const Products: NextPage = () => {
     const productsComponent = allProducts.map(([url, title, comment]) => (
-        <a  key={"product-" + title}
-            href={url}
-            className={styles.card}
-            target="_blank" rel="noopener noreferrer"
-        >
-            <h2>{title} &rarr;</h2>
-            <p>{comment}</p>
-        </a>
+        <Grid item xs={2} sm={4} md={4} key={"product-" + title}>
+            <Card sx={{maxWidth: 500}}>
+                <CardContent>
+                    <Typography variant="h5">
+                        {title}
+                    </Typography>
+                    <Typography variant="subtitle1">
+                        {comment}
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <label>
+                        <Link href={url}>
+                            <FaGithub></FaGithub>
+                        </Link>
+                    </label>
+                </CardActions>
+            </Card>
+        </Grid>
     ))
-    
+
     return (
-        <div className={styles.grid}>
+        <Grid container spacing={{xs: 2, md: 3}} columns={{xs: 4, sm: 8, md: 12}}>
             {productsComponent}
-        </div>
+        </Grid>
     )
 }
 
