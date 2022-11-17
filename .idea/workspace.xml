@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af83604f-b20d-466a-80c9-dcb24dd81805" name="変更" comment="rebase products.tsx with mui">
+    <list default="true" id="af83604f-b20d-466a-80c9-dcb24dd81805" name="変更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/contents/products.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/products.tsx" afterDir="false" />
     </list>
@@ -82,7 +82,7 @@
       <workItem from="1668314960236" duration="215000" />
       <workItem from="1668315269217" duration="481000" />
       <workItem from="1668658362625" duration="2184000" />
-      <workItem from="1668662042500" duration="2531000" />
+      <workItem from="1668662042500" duration="3829000" />
     </task>
     <task id="LOCAL-00001" summary="add context">
       <created>1668315387921</created>
@@ -140,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668662467071</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="rebase products.tsx with mui">
+      <created>1668664816063</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668664816063</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
