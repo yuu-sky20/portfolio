@@ -13,7 +13,7 @@ const allProducts: Array<[url, title, comment]> = [
         "Fun game to play whack-a-mole with cute characters."
     ],
     [
-        "https://quiet-praline-e7ca33.netlify.app",
+        "https://github.com/yuu-sky20/gabugabu",
         "gabugabu",
         "Abyssos: The Fifth Circle (Savage) gabugabu action."
     ],
