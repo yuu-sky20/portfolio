@@ -7,6 +7,7 @@
     <list default="true" id="af83604f-b20d-466a-80c9-dcb24dd81805" name="変更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/contents/products.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/products.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contents/skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/skills.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Home.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +86,7 @@
       <workItem from="1668658362625" duration="2184000" />
       <workItem from="1668662042500" duration="4525000" />
       <workItem from="1669262464534" duration="74000" />
-      <workItem from="1669262728718" duration="1070000" />
+      <workItem from="1669262728718" duration="1847000" />
     </task>
     <task id="LOCAL-00001" summary="add context">
       <created>1668315387921</created>
@@ -164,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668666545733</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="responsived iphone12">
+      <created>1669264166505</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669264166506</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +200,8 @@
     <MESSAGE value="rebase products.tsx with mui" />
     <MESSAGE value="add product url and icon" />
     <MESSAGE value="add emotion/css" />
-    <option name="LAST_COMMIT_MESSAGE" value="add emotion/css" />
+    <MESSAGE value="responsived iphone12" />
+    <option name="LAST_COMMIT_MESSAGE" value="responsived iphone12" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

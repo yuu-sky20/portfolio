@@ -1,41 +1,47 @@
 import type { NextPage } from 'next'
 import { Card, CardContent, CardActions, Typography, Grid, Link } from '@mui/material'
-import { FaGithub, FaLaptop } from 'react-icons/fa'
+import { FaGithub, FaLaptop, FaYoutube } from 'react-icons/fa'
 import { css } from '@emotion/css'
 
 type productUrl = string
 type githubUrl = string
+type youtubeUrl = string
 type title = string
 type comment = string
 
-const allProducts: Array<[productUrl, githubUrl, title, comment]> = [
+const allProducts: Array<[productUrl, githubUrl, youtubeUrl, title, comment]> = [
     [
         "",
         "https://github.com/yuu-sky20/whack-a-gopher",
+        "",
         "whack-a-gopher",
         "Fun game to play whack-a-mole with cute characters."
     ],
     [
         "https://quiet-praline-e7ca33.netlify.app/",
         "https://github.com/yuu-sky20/gabugabu",
+        "",
         "gabugabu",
         "Abyssos: The Fifth Circle (Savage) gabugabu action."
     ],
     [
         "",
         "https://github.com/yuu-sky20/actix-space-remover",
+        "",
         "actix-space-remover",
         "Remove superfluous line breaks and white space from text."
     ],
     [
         "https://tender-darwin-23a989.netlify.app/",
         "https://github.com/yuu-sky20/slot-machine-app",
+        "",
         "slot-machine-app",
         "Experience a slot machine game."
     ],
     [
         "https://yuu-sky20.github.io/simple-web-piano/dist/",
         "https://github.com/yuu-sky20/simple-web-piano",
+        "",
         "Simple Web Piano",
         "That can be played on the web."
     ]
@@ -48,7 +54,7 @@ const styleLink = css`
 `
 
 const Products: NextPage = () => {
-    const productsComponent = allProducts.map(([productUrl, githubUrl, title, comment]) => (
+    const productsComponent = allProducts.map(([productUrl, githubUrl,youtubeUrl, title, comment]) => (
         <Grid item xs={12} sm={4} md={4} key={"product-" + title}>
             <Card>
                 <CardContent>
