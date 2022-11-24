@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af83604f-b20d-466a-80c9-dcb24dd81805" name="変更" comment="add youtube-url">
+    <list default="true" id="af83604f-b20d-466a-80c9-dcb24dd81805" name="変更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contents/skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/skills.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Home.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,7 @@
       <workItem from="1668658362625" duration="2184000" />
       <workItem from="1668662042500" duration="4525000" />
       <workItem from="1669262464534" duration="74000" />
-      <workItem from="1669262728718" duration="5309000" />
+      <workItem from="1669262728718" duration="5463000" />
     </task>
     <task id="LOCAL-00001" summary="add context">
       <created>1668315387921</created>
@@ -185,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669265178387</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="refactoring">
+      <created>1669268597186</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669268597186</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +222,8 @@
     <MESSAGE value="responsived iphone12" />
     <MESSAGE value="add youtube-url" />
     <MESSAGE value="remove extra" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove extra" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

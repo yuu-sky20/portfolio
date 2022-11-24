@@ -18,21 +18,21 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <p className={styles.description}>
+        <h2 className={styles.description}>
           My Profile
-        </p>
+        </h2>
 
         <MyProfile />
 
-        <p className={styles.description}>
+        <h2 className={styles.description}>
           Products
-        </p>
+        </h2>
 
         <Products />
 
-        <p className={styles.description}>
+        <h2 className={styles.description}>
           Skills
-        </p>
+        </h2>
         
         <Skills />
       </main>
