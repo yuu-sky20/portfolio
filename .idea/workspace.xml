@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af83604f-b20d-466a-80c9-dcb24dd81805" name="変更" comment="">
+    <list default="true" id="af83604f-b20d-466a-80c9-dcb24dd81805" name="変更" comment="add youtube-url">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contents/products.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/products.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/contents/skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/skills.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Home.module.css" afterDir="false" />
     </list>
@@ -86,7 +85,7 @@
       <workItem from="1668658362625" duration="2184000" />
       <workItem from="1668662042500" duration="4525000" />
       <workItem from="1669262464534" duration="74000" />
-      <workItem from="1669262728718" duration="1847000" />
+      <workItem from="1669262728718" duration="5309000" />
     </task>
     <task id="LOCAL-00001" summary="add context">
       <created>1668315387921</created>
@@ -172,7 +171,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669264166506</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add youtube-url">
+      <created>1669265148721</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669265148722</updated>
+    </task>
+    <task id="LOCAL-00014" summary="remove extra">
+      <created>1669265178387</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1669265178387</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +214,9 @@
     <MESSAGE value="add product url and icon" />
     <MESSAGE value="add emotion/css" />
     <MESSAGE value="responsived iphone12" />
-    <option name="LAST_COMMIT_MESSAGE" value="responsived iphone12" />
+    <MESSAGE value="add youtube-url" />
+    <MESSAGE value="remove extra" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove extra" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

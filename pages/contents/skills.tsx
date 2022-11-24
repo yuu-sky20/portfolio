@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
-import styles from '../../styles/Home.module.css'
+import { Card, CardContent, Grid, Typography } from '@mui/material'
+import { css } from '@emotion/css'
 
 const proficientSkills: Array<string> = [
     "C",
@@ -32,20 +33,43 @@ const allSkills: skillsType = [
     ["Touched it", touchedSkills]
 ]
 
+const styleLocalGrid = css`
+  margin: 1em 0;
+`
+
+const styleCard = css`
+  margin: 0.5rem;
+  &:hover, &:focus, &:active {
+    color:rgb(0, 131, 85);
+    border-color: rgb(0, 131, 85);
+    background-color: rgb(175, 255, 215);
+  }
+`
+
+const styleSkillName = css`
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+`
+
 const Skills: NextPage = () => {
     const skillsComponent = allSkills.map(([tagName, skills]) => (
-        <section key={"tag-" + tagName} className={styles.grid_skill}>
-            <h3 className={styles.description_skill}>
+        <Grid key={"tag-" + tagName}>
+            <Typography variant="h5">
                 {tagName}
-            </h3>
-            <div className={styles.grid_card_skill}>
+            </Typography>
+            <Grid container className={styleLocalGrid}>
                 {skills.map((skill) => (
-                    <p key={"skill-" + skill} className={styles.card_skill}>
-                        {skill}
-                    </p>
+                    <Card key={"skill-" + skill} className={styleCard}>
+                        <CardContent>
+                            <Typography className={styleSkillName}>
+                                {skill}
+                            </Typography>
+                        </CardContent>
+                    </Card>
                 ))}
-            </div>
-        </section>
+            </Grid>
+        </Grid>
     ))
     return (
         <div>
