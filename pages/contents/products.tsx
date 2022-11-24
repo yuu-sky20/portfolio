@@ -49,8 +49,8 @@ const styleLink = css`
 
 const Products: NextPage = () => {
     const productsComponent = allProducts.map(([productUrl, githubUrl, title, comment]) => (
-        <Grid item xs={2} sm={4} md={4} key={"product-" + title}>
-            <Card sx={{maxWidth: 500}}>
+        <Grid item xs={12} sm={4} md={4} key={"product-" + title}>
+            <Card>
                 <CardContent>
                     <Typography variant="h5">
                         {title}
