@@ -22,7 +22,7 @@ const allProducts: Array<[productUrl, githubUrl, youtubeUrl, title, comment]> = 
         "https://github.com/yuu-sky20/gabugabu",
         "",
         "gabugabu",
-        "Abyssos: The Fifth Circle (Savage) gabugabu action."
+        "Preview Abyssos: The Fifth Circle (Savage) gabugabu action."
     ],
     [
         "",

@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="af83604f-b20d-466a-80c9-dcb24dd81805" name="変更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contents/products.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/products.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +34,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="2HTgPAW3ycZ8wRRITqGQ2a93w9k" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -84,7 +89,8 @@
       <workItem from="1668658362625" duration="2184000" />
       <workItem from="1668662042500" duration="4525000" />
       <workItem from="1669262464534" duration="74000" />
-      <workItem from="1669262728718" duration="5463000" />
+      <workItem from="1669262728718" duration="6911000" />
+      <workItem from="1671569842975" duration="119000" />
     </task>
     <task id="LOCAL-00001" summary="add context">
       <created>1668315387921</created>
@@ -191,7 +197,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669268597186</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="change font size">
+      <created>1669268767398</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669268767398</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add react-spring">
+      <created>1669269280944</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1669269280944</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +243,9 @@
     <MESSAGE value="add youtube-url" />
     <MESSAGE value="remove extra" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <MESSAGE value="change font size" />
+    <MESSAGE value="add react-spring" />
+    <option name="LAST_COMMIT_MESSAGE" value="add react-spring" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
