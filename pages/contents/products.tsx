@@ -8,42 +8,56 @@ type githubUrl = string
 type youtubeUrl = string
 type title = string
 type comment = string
+type duration = string
 
-const allProducts: Array<[productUrl, githubUrl, youtubeUrl, title, comment]> = [
+const allProducts: Array<[productUrl, githubUrl, youtubeUrl, title, comment, duration]> = [
+    [
+        "https://unityroom.com/games/seiton_tenchu",
+        "https://github.com/yuu-sky20/Tenchu",
+        "",
+        "Tenchu",
+        "Reproduction of ff14 crystal conflict Ninja action.",
+        "2 week"
+    ],
     [
         "",
         "https://github.com/yuu-sky20/whack-a-gopher",
         "",
         "whack-a-gopher",
-        "Fun game to play whack-a-mole with cute characters."
+        "Fun game to play whack-a-mole with cute characters.",
+        ""
     ],
     [
         "https://quiet-praline-e7ca33.netlify.app/",
         "https://github.com/yuu-sky20/gabugabu",
         "",
         "gabugabu",
-        "Preview Abyssos: The Fifth Circle (Savage) gabugabu action."
+        "Preview Abyssos: The Fifth Circle (Savage) gabugabu action.",
+        "2 week"
     ],
     [
         "",
         "https://github.com/yuu-sky20/actix-space-remover",
         "",
         "actix-space-remover",
-        "Remove superfluous line breaks and white space from text."
+        "Remove superfluous line breaks and white space from text.",
+        "2 day"
     ],
     [
         "https://tender-darwin-23a989.netlify.app/",
         "https://github.com/yuu-sky20/slot-machine-app",
         "",
         "slot-machine-app",
-        "Experience a slot machine game."
+        "Experience a slot machine game.",
+        "1 month"
     ],
     [
         "https://yuu-sky20.github.io/simple-web-piano/dist/",
         "https://github.com/yuu-sky20/simple-web-piano",
         "",
         "Simple Web Piano",
-        "That can be played on the web."
+        "That can be played on the web.",
+        "1 month"
     ]
 ]
 
@@ -54,7 +68,7 @@ const styleLink = css`
 `
 
 const Products: NextPage = () => {
-    const productsComponent = allProducts.map(([productUrl, githubUrl,youtubeUrl, title, comment]) => (
+    const productsComponent = allProducts.map(([productUrl, githubUrl,youtubeUrl, title, comment, duration]) => (
         <Grid item xs={12} sm={4} md={4} key={"product-" + title}>
             <Card>
                 <CardContent>
@@ -63,6 +77,9 @@ const Products: NextPage = () => {
                     </Typography>
                     <Typography variant="subtitle1">
                         {comment}
+                    </Typography>
+                    <Typography variant="h6" textAlign="right" color="cadetblue">
+                        {duration}
                     </Typography>
                 </CardContent>
                 <CardActions>
