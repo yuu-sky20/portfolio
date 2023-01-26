@@ -16,14 +16,16 @@ const usableSkills: Array<string> = [
     "Docker",
     "Git",
     "React",
-    "Vue"
+    "Vue",
+    "Unity"
 ]
 const touchedSkills: Array<string> = [
     "Ruby",
     "Java",
     "Elm",
     "Common Lisp",
-    "kubernetes"
+    "kubernetes",
+    "GraphQL"
 ]
 
 type skillsType = Array<[string, Array<string>]>
