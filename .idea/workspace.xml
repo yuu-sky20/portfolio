@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af83604f-b20d-466a-80c9-dcb24dd81805" name="変更" comment="fix duration">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contents/products.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/products.tsx" afterDir="false" />
+    <list default="true" id="af83604f-b20d-466a-80c9-dcb24dd81805" name="変更" comment="add skils">
       <change beforePath="$PROJECT_DIR$/pages/contents/skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/skills.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +92,7 @@
       <workItem from="1669262728718" duration="6911000" />
       <workItem from="1671569842975" duration="119000" />
       <workItem from="1674707582134" duration="3246000" />
-      <workItem from="1675313970633" duration="149000" />
+      <workItem from="1675313970633" duration="202000" />
     </task>
     <task id="LOCAL-00001" summary="add context">
       <created>1668315387921</created>
@@ -243,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674711328803</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add skils">
+      <created>1675314198593</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1675314198593</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +286,8 @@
     <MESSAGE value="add skills" />
     <MESSAGE value="add products" />
     <MESSAGE value="fix duration" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix duration" />
+    <MESSAGE value="add skils" />
+    <option name="LAST_COMMIT_MESSAGE" value="add skils" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

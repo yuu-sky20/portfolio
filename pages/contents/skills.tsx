@@ -6,7 +6,8 @@ const proficientSkills: Array<string> = [
     "C",
     "C++",
     "Rust",
-    "Javascript (Typescript)"
+    "Javascript (Typescript)",
+    "Vim"
 ];
 const usableSkills: Array<string> = [
     "C#",
@@ -17,11 +18,12 @@ const usableSkills: Array<string> = [
     "Git",
     "React",
     "Vue",
-    "Unity"
+    "Unity",
+    "Java",
+    "Spring boot"
 ]
 const touchedSkills: Array<string> = [
     "Ruby",
-    "Java",
     "Elm",
     "Common Lisp",
     "kubernetes",
