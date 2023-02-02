@@ -17,7 +17,7 @@ const allProducts: Array<[productUrl, githubUrl, youtubeUrl, title, comment, dur
         "",
         "Tenchu",
         "Reproduction of ff14 crystal conflict Ninja action.",
-        "2 week"
+        "3 week"
     ],
     [
         "",
