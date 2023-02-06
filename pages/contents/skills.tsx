@@ -20,14 +20,16 @@ const usableSkills: Array<string> = [
     "Vue",
     "Unity",
     "Java",
-    "Spring boot"
+    "Spring boot",
+    "Blazor(.NET Core)"
 ]
 const touchedSkills: Array<string> = [
     "Ruby",
     "Elm",
     "Common Lisp",
     "kubernetes",
-    "GraphQL"
+    "GraphQL",
+    "Azure"
 ]
 
 type skillsType = Array<[string, Array<string>]>
