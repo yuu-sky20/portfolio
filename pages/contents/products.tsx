@@ -12,6 +12,14 @@ type duration = string
 
 const allProducts: Array<[productUrl, githubUrl, youtubeUrl, title, comment, duration]> = [
     [
+        "",
+        "https://github.com/yuu-sky20/HighAndLow",
+        "https://youtu.be/Jx-XjE1gB-E",
+        "High and Low",
+        "High and Low trump game reproduced.",
+        "2 day"
+    ],
+    [
         "https://unityroom.com/games/seiton_tenchu",
         "https://github.com/yuu-sky20/Tenchu",
         "",
@@ -88,6 +96,9 @@ const Products: NextPage = () => {
                     </Link>
                     <Link href={productUrl} target="_blank" className={styleLink}>
                         {productUrl != "" && <FaLaptop color={"ccc"} size={"1.5rem"}></FaLaptop>}
+                    </Link>
+                    <Link href={youtubeUrl} target="_blank" className={styleLink}>
+                        {youtubeUrl != "" && <FaYoutube color={"ccc"} size={"1.5rem"}></FaYoutube>}
                     </Link>
                 </CardActions>
             </Card>
