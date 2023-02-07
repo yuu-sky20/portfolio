@@ -1,72 +1,82 @@
 import type { NextPage } from 'next'
 import { Card, CardContent, CardActions, Typography, Grid, Link } from '@mui/material'
 import { FaGithub, FaLaptop, FaYoutube } from 'react-icons/fa'
+import { MdOutlineArchitecture } from 'react-icons/md'
 import { css } from '@emotion/css'
 
-type productUrl = string
-type githubUrl = string
-type youtubeUrl = string
-type title = string
-type comment = string
-type duration = string
+type AnyFunction = (...args: any[]) => any;
 
-const allProducts: Array<[productUrl, githubUrl, youtubeUrl, title, comment, duration]> = [
-    [
-        "",
-        "https://github.com/yuu-sky20/HighAndLow",
-        "https://youtu.be/Jx-XjE1gB-E",
-        "High and Low",
-        "High and Low trump game reproduced.",
-        "2 day"
-    ],
-    [
-        "https://unityroom.com/games/seiton_tenchu",
-        "https://github.com/yuu-sky20/Tenchu",
-        "",
-        "Tenchu",
-        "Reproduction of ff14 crystal conflict Ninja action.",
-        "3 week"
-    ],
-    [
-        "",
-        "https://github.com/yuu-sky20/whack-a-gopher",
-        "",
-        "whack-a-gopher",
-        "Fun game to play whack-a-mole with cute characters.",
-        ""
-    ],
-    [
-        "https://quiet-praline-e7ca33.netlify.app/",
-        "https://github.com/yuu-sky20/gabugabu",
-        "",
-        "gabugabu",
-        "Preview Abyssos: The Fifth Circle (Savage) gabugabu action.",
-        "2 week"
-    ],
-    [
-        "",
-        "https://github.com/yuu-sky20/actix-space-remover",
-        "",
-        "actix-space-remover",
-        "Remove superfluous line breaks and white space from text.",
-        "2 day"
-    ],
-    [
-        "https://tender-darwin-23a989.netlify.app/",
-        "https://github.com/yuu-sky20/slot-machine-app",
-        "",
-        "slot-machine-app",
-        "Experience a slot machine game.",
-        "1 month"
-    ],
-    [
-        "https://yuu-sky20.github.io/simple-web-piano/dist/",
-        "https://github.com/yuu-sky20/simple-web-piano",
-        "",
-        "Simple Web Piano",
-        "That can be played on the web.",
-        "1 month"
-    ]
+type KeysOfType<T, S> = {
+    [key in keyof T]: S extends T[key] ? key : never;
+}[keyof T];
+
+type UndefinedToOptional<T> =
+    Omit<T, KeysOfType<T, undefined>> &
+    Partial<Pick<T, KeysOfType<T, undefined>>>;
+
+type Fields<T> = UndefinedToOptional<Omit<T, KeysOfType<T, AnyFunction>>>;
+
+class Product {
+    public readonly productUrl? : string
+    public readonly githubUrl? : string
+    public readonly youtubeUrl? : string
+    public readonly architectureUrl? : string
+    public readonly title! : string
+    public readonly comment! : string
+    public readonly duration? : string
+    constructor(props: Fields<Product>) {
+        Object.assign(this, props)
+    }
+}
+
+const allProducts: Array<Product> = [
+    new Product({
+            githubUrl: "https://github.com/yuu-sky20/HighAndLow",
+            youtubeUrl: "https://youtu.be/Jx-XjE1gB-E",
+            title: "High and Low",
+            comment: "High and Low trump game reproduced.",
+            duration: "2 day"
+        }),
+    new Product({
+        productUrl: "https://unityroom.com/games/seiton_tenchu",
+        githubUrl: "https://github.com/yuu-sky20/Tenchu",
+        title: "Tenchu",
+        comment: "Reproduction of ff14 crystal conflict Ninja action.",
+        duration: "3 week"
+        }),
+    new Product({
+        githubUrl: "https://github.com/yuu-sky20/whack-a-gopher",
+        architectureUrl: "https://miro.com/app/board/uXjVPr2DK_8=/?share_link_id=866224004211",
+        title: "whack-a-gopher",
+        comment: "Fun game to play whack-a-mole with cute characters.",
+    }),
+    new Product({
+        productUrl: "https://quiet-praline-e7ca33.netlify.app/",
+        githubUrl: "https://github.com/yuu-sky20/gabugabu",
+        title: "gabugabu",
+        comment: "Preview Abyssos: The Fifth Circle (Savage) gabugabu action.",
+        duration: "2 week"
+    }),
+    new Product({
+        githubUrl: "https://github.com/yuu-sky20/actix-space-remover",
+        title: "actix-space-remover",
+        comment: "Remove superfluous line breaks and white space from text.",
+        duration: "2 day"
+    }),
+    new Product({
+        productUrl: "https://tender-darwin-23a989.netlify.app/",
+        githubUrl: "https://github.com/yuu-sky20/slot-machine-app",
+        title: "slot-machine-app",
+        comment: "Experience a slot machine game.",
+        duration: "1 month"
+    }),
+    new Product({
+        productUrl: "https://yuu-sky20.github.io/simple-web-piano/dist/",
+        githubUrl: "https://github.com/yuu-sky20/simple-web-piano",
+        title: "Simple Web Piano",
+        comment: "That can be played on the web.",
+        duration: "1 month"
+    }),
 ]
 
 const styleLink = css`
@@ -76,30 +86,41 @@ const styleLink = css`
 `
 
 const Products: NextPage = () => {
-    const productsComponent = allProducts.map(([productUrl, githubUrl,youtubeUrl, title, comment, duration]) => (
-        <Grid item xs={12} sm={4} md={4} key={"product-" + title}>
+    const productsComponent = allProducts.map((product) => (
+        <Grid item xs={12} sm={4} md={4} key={"product-" + product.title}>
             <Card>
                 <CardContent>
                     <Typography variant="h5">
-                        {title}
+                        {product.title}
                     </Typography>
                     <Typography variant="subtitle1">
-                        {comment}
+                        {product.comment}
                     </Typography>
                     <Typography variant="h6" textAlign="right" color="cadetblue">
-                        {duration}
+                        {product.duration}
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Link href={githubUrl} target="_blank" className={styleLink}>
-                        {githubUrl != "" && <FaGithub color={"ccc"} size={"1.5rem"}></FaGithub>}
-                    </Link>
-                    <Link href={productUrl} target="_blank" className={styleLink}>
-                        {productUrl != "" && <FaLaptop color={"ccc"} size={"1.5rem"}></FaLaptop>}
-                    </Link>
-                    <Link href={youtubeUrl} target="_blank" className={styleLink}>
-                        {youtubeUrl != "" && <FaYoutube color={"ccc"} size={"1.5rem"}></FaYoutube>}
-                    </Link>
+                    {product.githubUrl != null &&
+                        <Link href={product.githubUrl} target="_blank" className={styleLink}>
+                            <FaGithub color={"ccc"} size={"1.5rem"}></FaGithub>
+                        </Link>
+                    }
+                    {product.productUrl != null &&
+                        <Link href={product.productUrl} target="_blank" className={styleLink}>
+                            <FaLaptop color={"ccc"} size={"1.5rem"}></FaLaptop>
+                        </Link>
+                    }
+                    {product.youtubeUrl != null &&
+                        <Link href={product.youtubeUrl} target="_blank" className={styleLink}>
+                            <FaYoutube color={"ccc"} size={"1.5rem"}></FaYoutube>
+                        </Link>
+                    }
+                    {product.architectureUrl != null &&
+                        <Link href={product.architectureUrl} target="_blank" className={styleLink}>
+                            <MdOutlineArchitecture color={"ccc"} size={"1.5rem"}></MdOutlineArchitecture>
+                        </Link>
+                    }
                 </CardActions>
             </Card>
         </Grid>
