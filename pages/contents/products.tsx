@@ -46,7 +46,7 @@ const allProducts: Array<Product> = [
         }),
     new Product({
         githubUrl: "https://github.com/yuu-sky20/whack-a-gopher",
-        architectureUrl: "https://miro.com/app/board/uXjVPr2DK_8=/?share_link_id=866224004211",
+        architectureUrl: "https://drive.google.com/file/d/1EHV9ZhloorEfd29mZA09NPQhMc4MrTpB/view?usp=sharing",
         title: "whack-a-gopher",
         comment: "Fun game to play whack-a-mole with cute characters.",
     }),
