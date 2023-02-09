@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import { Card, CardContent, CardActions, Typography, Grid, Link } from '@mui/material'
 import { FaGithub, FaLaptop, FaYoutube } from 'react-icons/fa'
 import { MdOutlineArchitecture } from 'react-icons/md'
+import { AiFillFileZip } from "react-icons/ai"
 import { css } from '@emotion/css'
 
 type AnyFunction = (...args: any[]) => any;
@@ -21,6 +22,7 @@ class Product {
     public readonly githubUrl? : string
     public readonly youtubeUrl? : string
     public readonly architectureUrl? : string
+    public readonly zipFileUrl? : string
     public readonly title! : string
     public readonly comment! : string
     public readonly duration? : string
@@ -31,11 +33,19 @@ class Product {
 
 const allProducts: Array<Product> = [
     new Product({
-            githubUrl: "https://github.com/yuu-sky20/HighAndLow",
-            youtubeUrl: "https://youtu.be/Jx-XjE1gB-E",
-            title: "High and Low",
-            comment: "High and Low trump game reproduced.",
-            duration: "2 day"
+        githubUrl: "https://github.com/yuu-sky20/Zantetsu",
+        youtubeUrl: "https://youtu.be/TTnWmv8JFks",
+        zipFileUrl: "https://github.com/yuu-sky20/Zantetsu/releases/tag/v1.0",
+        title: "Zantetsu",
+        comment: "The game is to knock down mannequins in a straight line.",
+        duration: "1 day"
+    }),
+    new Product({
+        githubUrl: "https://github.com/yuu-sky20/HighAndLow",
+        youtubeUrl: "https://youtu.be/Jx-XjE1gB-E",
+        title: "High and Low",
+        comment: "High and Low trump game reproduced.",
+        duration: "2 day"
         }),
     new Product({
         productUrl: "https://unityroom.com/games/seiton_tenchu",
@@ -46,7 +56,7 @@ const allProducts: Array<Product> = [
         }),
     new Product({
         githubUrl: "https://github.com/yuu-sky20/whack-a-gopher",
-        architectureUrl: "https://drive.google.com/file/d/1EHV9ZhloorEfd29mZA09NPQhMc4MrTpB/view?usp=sharing",
+        architectureUrl: "https://drive.google.com/drive/folders/1_10vK-wVWpIXurhR_rZ6UOY3wc6o7rLG?usp=sharing",
         title: "whack-a-gopher",
         comment: "Fun game to play whack-a-mole with cute characters.",
     }),
@@ -119,6 +129,11 @@ const Products: NextPage = () => {
                     {product.architectureUrl != null &&
                         <Link href={product.architectureUrl} target="_blank" className={styleLink}>
                             <MdOutlineArchitecture color={"ccc"} size={"1.5rem"}></MdOutlineArchitecture>
+                        </Link>
+                    }
+                    {product.zipFileUrl != null &&
+                        <Link href={product.zipFileUrl} target="_blank" className={styleLink}>
+                            <AiFillFileZip color={"ccc"} size={"1.5rem"}></AiFillFileZip>
                         </Link>
                     }
                 </CardActions>
