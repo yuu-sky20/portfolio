@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Card, CardContent, CardActions, Typography, Grid, Link } from '@mui/material'
+import { Card, CardContent, CardActions, Typography, Grid, Link, Chip, Stack } from '@mui/material'
 import { FaGithub, FaLaptop, FaYoutube } from 'react-icons/fa'
 import { MdOutlineArchitecture } from 'react-icons/md'
 import { AiFillFileZip } from "react-icons/ai"
@@ -26,6 +26,7 @@ class Product {
     public readonly title! : string
     public readonly comment! : string
     public readonly duration? : string
+    public readonly usingSkills! : string[]
     constructor(props: Fields<Product>) {
         Object.assign(this, props)
     }
@@ -38,54 +39,62 @@ const allProducts: Array<Product> = [
         zipFileUrl: "https://github.com/yuu-sky20/Zantetsu/releases/tag/v1.0",
         title: "Zantetsu",
         comment: "The game is to knock down mannequins in a straight line.",
-        duration: "1 day"
+        duration: "1 day",
+        usingSkills: ["C#", "Unity"]
     }),
     new Product({
         githubUrl: "https://github.com/yuu-sky20/HighAndLow",
         youtubeUrl: "https://youtu.be/Jx-XjE1gB-E",
         title: "High and Low",
         comment: "High and Low trump game reproduced.",
-        duration: "2 day"
+        duration: "2 day",
+        usingSkills: ["C#", "Blazor"]
         }),
     new Product({
         productUrl: "https://unityroom.com/games/seiton_tenchu",
         githubUrl: "https://github.com/yuu-sky20/Tenchu",
         title: "Tenchu",
         comment: "Reproduction of ff14 crystal conflict Ninja action.",
-        duration: "3 week"
+        duration: "3 week",
+        usingSkills: ["C#", "Unity"]
         }),
     new Product({
         githubUrl: "https://github.com/yuu-sky20/whack-a-gopher",
         architectureUrl: "https://drive.google.com/drive/folders/1_10vK-wVWpIXurhR_rZ6UOY3wc6o7rLG?usp=sharing",
         title: "whack-a-gopher",
         comment: "Fun game to play whack-a-mole with cute characters.",
+        usingSkills: ["Docker", "Remix.js", "gRPC"]
     }),
     new Product({
         productUrl: "https://quiet-praline-e7ca33.netlify.app/",
         githubUrl: "https://github.com/yuu-sky20/gabugabu",
         title: "gabugabu",
         comment: "Preview Abyssos: The Fifth Circle (Savage) gabugabu action.",
-        duration: "2 week"
+        duration: "2 week",
+        usingSkills: ["Typescript", "React.js"]
     }),
     new Product({
         githubUrl: "https://github.com/yuu-sky20/actix-space-remover",
         title: "actix-space-remover",
         comment: "Remove superfluous line breaks and white space from text.",
-        duration: "2 day"
+        duration: "2 day",
+        usingSkills: ["Rust", "Actix Web"]
     }),
     new Product({
         productUrl: "https://tender-darwin-23a989.netlify.app/",
         githubUrl: "https://github.com/yuu-sky20/slot-machine-app",
         title: "slot-machine-app",
         comment: "Experience a slot machine game.",
-        duration: "1 month"
+        duration: "1 month",
+        usingSkills: ["Typescript", "Vue.js"]
     }),
     new Product({
         productUrl: "https://yuu-sky20.github.io/simple-web-piano/dist/",
         githubUrl: "https://github.com/yuu-sky20/simple-web-piano",
         title: "Simple Web Piano",
         comment: "That can be played on the web.",
-        duration: "1 month"
+        duration: "1 month",
+        usingSkills: ["Typescript", "React.js"]
     }),
 ]
 
@@ -109,6 +118,13 @@ const Products: NextPage = () => {
                     <Typography variant="h6" textAlign="right" color="cadetblue">
                         {product.duration}
                     </Typography>
+                </CardContent>
+                <CardContent>
+                    <Stack direction="row" spacing={1}>
+                        {product.usingSkills.sort().map((usingSkill) => (
+                            <Chip label={usingSkill} variant="outlined" />
+                        ))}
+                    </Stack>
                 </CardContent>
                 <CardActions>
                     {product.githubUrl != null &&
