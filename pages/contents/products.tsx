@@ -122,7 +122,7 @@ const Products: NextPage = () => {
                 <CardContent>
                     <Stack direction="row" spacing={1}>
                         {product.usingSkills.sort().map((usingSkill) => (
-                            <Chip label={usingSkill} variant="outlined" />
+                            <Chip label={usingSkill} variant="outlined" key={`${product.title}-${usingSkill}`} />
                         ))}
                     </Stack>
                 </CardContent>
