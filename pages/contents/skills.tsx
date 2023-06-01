@@ -20,7 +20,9 @@ const usableSkills: Array<string> = [
     "Vue",
     "Unity",
     "Java",
+    "R",
     "Blazor",
+    "AWS"
 ]
 const touchedSkills: Array<string> = [
     "Ruby",
