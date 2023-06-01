@@ -34,6 +34,14 @@ class Product {
 
 const allProducts: Array<Product> = [
     new Product({
+        productUrl: "https://filteringdatasbytagsweb20230530213758.azurewebsites.net/",
+        githubUrl: "https://github.com/yuu-sky20/FilteringDatasByTagsWeb",
+        title: "FilteringDatasByTags",
+        comment: "Detects tags from tabular data in Excel, outputs classified data, and pastes the results to the clipboard",
+        duration: "1 day",
+        usingSkills: ["C#", "Blazor", "Azure"]
+    }),
+    new Product({
         githubUrl: "https://github.com/yuu-sky20/Zantetsu",
         youtubeUrl: "https://youtu.be/TTnWmv8JFks",
         zipFileUrl: "https://github.com/yuu-sky20/Zantetsu/releases/tag/v1.0",
